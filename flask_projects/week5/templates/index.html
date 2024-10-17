@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Manage Dscussions</h1>
+
+            <!-- Form for deleting posts -->
+            <form method="POST" action="/delete">
+                <table class="table is-fullwidth is-striped">
+                    <thead>
+                        <tr>
+                            <th>Select</th>
+                            <th>ID</th>
+                            <th>Content</th>
+                            <!--th>Created At</th-->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dynamically display the posts -->
+                        {% for post in posts %}
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="post_ids" value="{{ post.id }}">
+                            </td>
+                            <td>{{ post.id }}</td>
+                            <td>{{ post.post }}</td>
+                            <td>{{ post.created_at }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+
+                <div class="buttons">
+                    <button class="button is-danger" type="submit">Delete Selected</button>
+                </div>
+            </form>
+
+            <!-- Button to create new post -->
+            <a href="/create" class="button is-primary">Create New Post</a>
+        </div>
+    </section>
+</body>
+</html>

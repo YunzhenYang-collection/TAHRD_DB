@@ -1,0 +1,34 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Course Registration System</h1>
+    <p>This system allows you to manage your course enrollment, view available courses, and drop courses.</p>
+
+    <!-- 導航按鈕 -->
+    <div>
+        <a href="/student/1" class="btn">View My Courses</a>
+        <a href="/courses" class="btn">View All Courses</a>
+    </div>
+
+    <!-- 公告或通知 -->
+    <section>
+        <h2>Announcements</h2>
+        <p>Remember to finalize your course registration before the deadline!</p>
+        <p>New courses are now available for the upcoming semester!</p>
+    </section>
+
+    <!-- 登入或登出 (可選) -->
+    <div>
+        <a href="/login" class="btn">Login</a>
+        <a href="/logout" class="btn">Logout</a>
+    </div>
+
+</body>
+</html>
