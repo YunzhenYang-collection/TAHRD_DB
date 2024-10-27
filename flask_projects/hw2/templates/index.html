@@ -1,34 +1,113 @@
-<!-- templates/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Registration System</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Property Listings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .pagination {
+            margin-top: 20px;
+        }
+        .pagination a {
+            margin: 0 5px;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .pagination a:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to the Course Registration System</h1>
-    <p>This system allows you to manage your course enrollment, view available courses, and drop courses.</p>
+    <h1>Property Listings</h1>
+    
+    <!-- Filter Form -->
+    <form class="filter-form" action="/" method="get">
+        <label for="price_range">Select Price Range:</label>
+        <select name="price_range" id="price_range">
+            <option value="0" {% if price_range == '0' %}selected{% endif %}>All Prices</option>
+            <option value="1" {% if price_range == '1' %}selected{% endif %}>Under 20000</option>
+            <option value="2" {% if price_range == '2' %}selected{% endif %}>20000 - 25000</option>
+            <option value="3" {% if price_range == '3' %}selected{% endif %}>25000 - 30000</option>
+            <option value="4" {% if price_range == '4' %}selected{% endif %}>30000 - 35000</option>
+            <option value="5" {% if price_range == '5' %}selected{% endif %}>Above 35000</option>
+        </select>
+        <button type="submit">Filter</button>
+    </form>
 
-    <!-- 導航按鈕 -->
-    <div>
-        <a href="/student/1" class="btn">View My Courses</a>
-        <a href="/courses" class="btn">View All Courses</a>
+    <!-- Property Table -->
+    <table>
+        <tr>
+            <th>NO.</th>
+            <th>Address</th>
+            <th>Price</th>
+            <th>Type</th>
+            <th>Owner Name</th>
+            <th>Contact Info</th>
+            <th>Tenant Name</th>
+            <th>Rental Start Date</th>
+            <th>Rental End Date</th>
+            <th>Rent Amount</th>
+        </tr>
+        {% for property in properties %}
+        <tr>
+            <td>{{ property.property_id }}</td>
+            <td>{{ property.address }}</td>
+            <td>${{ property.price }}</td>
+            <td>{{ property.property_type }}</td>
+            <td>{{ property.owner_name }}</td>
+            <td>{{ property.contact_info }}</td>
+            <td>{{ property.tenant_name }}</td>
+            <td>{{ property.start_date }}</td>
+            <td>{{ property.end_date }}</td>
+            <td>${{ property.rent_amount }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <!-- Pagination -->
+    <div class="pagination">
+        {% if page > 1 %}
+            <a href="{{ url_for('index', page=page - 1, price_range=price_range) }}">Previous</a>
+        {% endif %}
+        {% if has_next_page %}
+            <a href="{{ url_for('index', page=page + 1, price_range=price_range) }}">Next</a>
+        {% endif %}
     </div>
-
-    <!-- 公告或通知 -->
-    <section>
-        <h2>Announcements</h2>
-        <p>Remember to finalize your course registration before the deadline!</p>
-        <p>New courses are now available for the upcoming semester!</p>
-    </section>
-
-    <!-- 登入或登出 (可選) -->
-    <div>
-        <a href="/login" class="btn">Login</a>
-        <a href="/logout" class="btn">Logout</a>
-    </div>
-
 </body>
 </html>

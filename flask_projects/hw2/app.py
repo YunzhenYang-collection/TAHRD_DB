@@ -1,89 +1,60 @@
-from flask import Flask, render_template, request, redirect, url_for
-import mysql.connector
-import os
+from flask import Flask, render_template, request, url_for
+from flask_mysqldb import MySQL
+import MySQLdb.cursors
 
 app = Flask(__name__)
 
-# 連接資料庫
-def get_db_connection():
-    try:
-        conn = mysql.connector.connect(
-            host='localhost',
-            user=os.getenv('DB_USER', 'root'),          # 使用環境變數，若無則默認 root
-            password=os.getenv('DB_PASSWORD', 'zhen41171119H'),  # 使用環境變數
-            database='course_management'
-        )
-        return conn
-    except mysql.connector.Error as err:
-        print(f"Error: {err}")
-        return None
+
+app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_DB'] = ''
+
+mysql = MySQL(app)
+
+
+ITEMS_PER_PAGE = 15
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    
+    page = request.args.get('page', 1, type=int)
+    price_range = request.args.get('price_range', '0')
+    offset = (page - 1) * ITEMS_PER_PAGE
+    
+  
+    price_conditions = {
+        '0': '', 
+        '1': 'WHERE properties.price < 20000',
+        '2': 'WHERE properties.price BETWEEN 20000 AND 25000',
+        '3': 'WHERE properties.price BETWEEN 25000 AND 30000',
+        '4': 'WHERE properties.price BETWEEN 30000 AND 35000',
+        '5': 'WHERE properties.price > 35000'
+    }
+    
+    
+    query = f'''
+    SELECT properties.property_id, properties.address, properties.price, properties.property_type, 
+           owners.name AS owner_name, owners.contact_info,
+           MIN(rentals.tenant_name) AS tenant_name, MIN(rentals.start_date) AS start_date, MIN(rentals.end_date) AS end_date, 
+           MIN(rentals.rent_amount) AS rent_amount
+    FROM properties
+    JOIN owners ON properties.owner_id = owners.owner_id
+    LEFT JOIN rentals ON properties.property_id = rentals.property_id
+    {price_conditions[price_range]}
+    GROUP BY properties.property_id
+    ORDER BY properties.property_id
+    LIMIT {ITEMS_PER_PAGE} OFFSET {offset}
+    '''
+    
+    cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
+    cursor.execute(query)
+    properties = cursor.fetchall()
+    
+    
+    has_next_page = len(properties) == ITEMS_PER_PAGE
 
-# 顯示學生已選擇的課程
-@app.route('/student/<int:student_id>')
-def show_courses(student_id):
-    conn = get_db_connection()
-    if conn is None:
-        return "Failed to connect to the database", 500  # 返回 HTTP 500 錯誤
-    try:
-        with conn.cursor() as cursor:
-            # 使用 INNER JOIN 查詢學生已選課程
-            query = '''
-                SELECT Courses.course_name, Courses.course_code, Enrollments.enrollment_id
-                FROM Enrollments
-                INNER JOIN Courses ON Enrollments.course_id = Courses.course_id
-                WHERE Enrollments.student_id = %s
-            '''
-            cursor.execute(query, (student_id,))
-            courses = cursor.fetchall()
-    except mysql.connector.Error as err:
-        return f"Error: {err}", 500  # 返回 SQL 查詢錯誤
-    finally:
-        conn.close()
+    return render_template('index.html', properties=properties, page=page, price_range=price_range, has_next_page=has_next_page)
 
-    return render_template('student_courses.html', student_id=student_id, courses=courses)
-
-# 刪除學生選擇的課程
-@app.route('/student/<int:student_id>/drop/<int:enrollment_id>')
-def drop_course(student_id, enrollment_id):
-    conn = get_db_connection()
-    if conn is None:
-        return "Failed to connect to the database", 500
-
-    try:
-        with conn.cursor() as cursor:
-            query = 'DELETE FROM Enrollments WHERE enrollment_id = %s'
-            cursor.execute(query, (enrollment_id,))
-        conn.commit()  # 提交刪除操作
-    except mysql.connector.Error as err:
-        return f"Error: {err}", 500
-    finally:
-        conn.close()
-
-    return redirect(url_for('show_courses', student_id=student_id))
-
-# 顯示所有可選課程
-@app.route('/courses')
-def show_all_courses():
-    conn = get_db_connection()
-    if conn is None:
-        return "Failed to connect to the database", 500
-
-    try:
-        with conn.cursor() as cursor:
-            query = 'SELECT course_id, course_name, course_code FROM Courses'
-            cursor.execute(query)
-            courses = cursor.fetchall()
-    except mysql.connector.Error as err:
-        return f"Error: {err}", 500
-    finally:
-        conn.close()
-
-    return render_template('all_courses.html', courses=courses)
-
-# 執行應用
 if __name__ == '__main__':
     app.run(debug=True)
