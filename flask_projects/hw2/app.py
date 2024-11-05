@@ -8,8 +8,8 @@ app.secret_key = 'your_secret_key'  # 用於顯示 flash 訊息
 # MySQL 配置
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'zhen41171119H'
-app.config['MYSQL_DB'] = 'rental_db'
+app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_DB'] = ''
 
 mysql = MySQL(app)
 
