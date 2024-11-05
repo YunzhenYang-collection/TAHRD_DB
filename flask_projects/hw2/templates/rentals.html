@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Records</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9fc;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #333;
+        }
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        table {
+            width: 100%;
+            max-width: 1000px;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rental Records</h1>
+
+    <!-- Rental Table -->
+    <table>
+        <tr>
+            <th>Rental ID</th>
+            <th>Property ID</th>
+            <th>Tenant Name</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Rent Amount</th>
+        </tr>
+        {% for rental in rentals %}
+        <tr>
+            <td>{{ rental.rental_id }}</td>
+            <td>{{ rental.property_id }}</td>
+            <td>{{ rental.tenant_name }}</td>
+            <td>{{ rental.start_date }}</td>
+            <td>{{ rental.end_date }}</td>
+            <td>${{ rental.rent_amount }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -8,7 +8,7 @@ app.secret_key = 'your_secret_key'  # Used for flash messages
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'  # Replace with your MySQL username
 app.config['MYSQL_PASSWORD'] = ''  # Replace with your MySQL password
-app.config['MYSQL_DB'] = 'student_db'  # Replace with your database name
+app.config['MYSQL_DB'] = ''  # Replace with your database name
 
 mysql = MySQL(app)
 
