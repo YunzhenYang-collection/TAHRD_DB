@@ -1,4 +1,4 @@
-# Rental Property Management System
+# Rental Property Management System By NoSQL
 ## Project Overview
 This is a Flask-based web application for managing rental properties. It allows users to:
 - View a list of rental properties.
