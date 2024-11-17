@@ -1,0 +1,332 @@
+[
+    {
+        "address": "No.11, Songgao Rd., Xinyi Dist., Taipei City",
+        "price": "30000",
+        "property_type": "Apartment",
+        "latitude": "25.0330",
+        "longitude": "121.5654",
+        "owner": {
+            "name": "Wang Xiaoming",
+            "contact_info": "0988-111-222"
+        }
+    },
+    {
+        "address": "No.32, Sec. 2, Heping E. Rd., Da’an Dist., Taipei City",
+        "price": "25000",
+        "property_type": "Condo",
+        "latitude": "25.0262",
+        "longitude": "121.5437",
+        "owner": {
+            "name": "Li Meili",
+            "contact_info": "0988-222-333"
+        }
+    },
+    {
+        "address": "No.91, Tingzhou Rd., Sec. 1, Zhongzheng Dist., Taipei City",
+        "price": "22000",
+        "property_type": "House",
+        "latitude": "25.0234",
+        "longitude": "121.5285",
+        "owner": {
+            "name": "Zhang Datong",
+            "contact_info": "0988-333-444"
+        }
+    },
+    {
+        "address": "No.42, Sec. 4, Nanjing E. Rd., Songshan Dist., Taipei City",
+        "price": "28000",
+        "property_type": "Apartment",
+        "latitude": "25.0518",
+        "longitude": "121.5532",
+        "owner": {
+            "name": "Chen Anan",
+            "contact_info": "0988-444-555"
+        }
+    },
+    {
+        "address": "No.12, Kangding Rd., Wanhua Dist., Taipei City",
+        "price": "18000",
+        "property_type": "Condo",
+        "latitude": "25.0375",
+        "longitude": "121.4990",
+        "owner": {
+            "name": "Lin Qiaoqiao",
+            "contact_info": "0988-555-666"
+        }
+    },
+    {
+        "address": "No.80, Sec. 5, Xinyi Rd., Xinyi Dist., Taipei City",
+        "price": "32000",
+        "property_type": "Apartment",
+        "latitude": "25.0308",
+        "longitude": "121.5651",
+        "owner": {
+            "name": "Huang Wei",
+            "contact_info": "0988-666-777"
+        }
+    },
+    {
+        "address": "No.56, Sec. 5, Zhongshan N. Rd., Shilin Dist., Taipei City",
+        "price": "27000",
+        "property_type": "House",
+        "latitude": "25.0912",
+        "longitude": "121.5484",
+        "owner": {
+            "name": "Liu Shiqi",
+            "contact_info": "0988-777-888"
+        }
+    },
+    {
+        "address": "No.70, Sec. 2, Shipai Rd., Beitou Dist., Taipei City",
+        "price": "23000",
+        "property_type": "Apartment",
+        "latitude": "25.1142",
+        "longitude": "121.5145",
+        "owner": {
+            "name": "Zhou Fangfang",
+            "contact_info": "0988-888-999"
+        }
+    },
+    {
+        "address": "No.33, Sec. 3, Yanping N. Rd., Datong Dist., Taipei City",
+        "price": "21000",
+        "property_type": "Condo",
+        "latitude": "25.0687",
+        "longitude": "121.5148",
+        "owner": {
+            "name": "Wu Haohao",
+            "contact_info": "0988-999-000"
+        }
+    },
+    {
+        "address": "No.71, Sec. 6, Roosevelt Rd., Wenshan Dist., Taipei City",
+        "price": "20000",
+        "property_type": "House",
+        "latitude": "24.9986",
+        "longitude": "121.5393",
+        "owner": {
+            "name": "Xu Xiaoxiao",
+            "contact_info": "0988-000-111"
+        }
+    },
+    {
+        "address": "No.45, Sec. 7, Zhongxiao E. Rd., Nangang Dist., Taipei City",
+        "price": "26000",
+        "property_type": "Apartment",
+        "latitude": "25.0554",
+        "longitude": "121.6054",
+        "owner": {
+            "name": "Gao Tianya",
+            "contact_info": "0988-111-333"
+        }
+    },
+    {
+        "address": "No.21, Sec. 6, Minquan E. Rd., Neihu Dist., Taipei City",
+        "price": "25000",
+        "property_type": "Condo",
+        "latitude": "25.0795",
+        "longitude": "121.5821",
+        "owner": {
+            "name": "Yang Keke",
+            "contact_info": "0988-222-444"
+        }
+    },
+    {
+        "address": "No.18, Linsen N. Rd., Zhongshan Dist., Taipei City",
+        "price": "28000",
+        "property_type": "Apartment",
+        "latitude": "25.0533",
+        "longitude": "121.5228",
+        "owner": {
+            "name": "Zheng Jie",
+            "contact_info": "0988-333-555"
+        }
+    },
+    {
+        "address": "No.2, Songren Rd., Xinyi Dist., Taipei City",
+        "price": "32000",
+        "property_type": "Condo",
+        "latitude": "25.0324",
+        "longitude": "121.5672",
+        "owner": {
+            "name": "Xie Zhizhi",
+            "contact_info": "0988-444-666"
+        }
+    },
+    {
+        "address": "No.19, Sec. 4, Renai Rd., Da’an Dist., Taipei City",
+        "price": "29000",
+        "property_type": "House",
+        "latitude": "25.0333",
+        "longitude": "121.5436",
+        "owner": {
+            "name": "Deng Huanhuan",
+            "contact_info": "0988-555-777"
+        }
+    },
+    {
+        "address": "No.17, Fuxing S. Rd., Da’an Dist., Taipei City",
+        "price": "21000",
+        "property_type": "Apartment",
+        "latitude": "25.0330",
+        "longitude": "121.5640",
+        "owner": {
+            "name": "Li Wei",
+            "contact_info": "0988-888-100"
+        }
+    },
+    {
+        "address": "No.88, Civic Blvd., Zhongshan Dist., Taipei City",
+        "price": "24000",
+        "property_type": "Condo",
+        "latitude": "25.0422",
+        "longitude": "121.5320",
+        "owner": {
+            "name": "Chen Xinyi",
+            "contact_info": "0988-888-101"
+        }
+    },
+    {
+        "address": "No.5, Changchun Rd., Zhongshan Dist., Taipei City",
+        "price": "28000",
+        "property_type": "House",
+        "latitude": "25.0495",
+        "longitude": "121.5450",
+        "owner": {
+            "name": "Zhang Min",
+            "contact_info": "0988-888-102"
+        }
+    },
+    {
+        "address": "No.76, Bade Rd., Songshan Dist., Taipei City",
+        "price": "22000",
+        "property_type": "Apartment",
+        "latitude": "25.0519",
+        "longitude": "121.5575",
+        "owner": {
+            "name": "Lin Zhihao",
+            "contact_info": "0988-888-103"
+        }
+    },
+    {
+        "address": "No.23, Chengde Rd., Datong Dist., Taipei City",
+        "price": "19000",
+        "property_type": "Condo",
+        "latitude": "25.0633",
+        "longitude": "121.5153",
+        "owner": {
+            "name": "Xu Hua",
+            "contact_info": "0988-888-104"
+        }
+    },
+    {
+        "address": "No.44, Zhongshan N. Rd., Shilin Dist., Taipei City",
+        "price": "33000",
+        "property_type": "Apartment",
+        "latitude": "25.0945",
+        "longitude": "121.5477",
+        "owner": {
+            "name": "Gao Xiong",
+            "contact_info": "0988-888-105"
+        }
+    },
+    {
+        "address": "No.50, Xinsheng N. Rd., Zhongzheng Dist., Taipei City",
+        "price": "36000",
+        "property_type": "House",
+        "latitude": "25.0299",
+        "longitude": "121.5200",
+        "owner": {
+            "name": "Deng Yun",
+            "contact_info": "0988-888-106"
+        }
+    },
+    {
+        "address": "No.18, Renai Rd., Da’an Dist., Taipei City",
+        "price": "26000",
+        "property_type": "Apartment",
+        "latitude": "25.0323",
+        "longitude": "121.5438",
+        "owner": {
+            "name": "Wang Ping",
+            "contact_info": "0988-888-107"
+        }
+    },
+    {
+        "address": "No.95, Dunhua S. Rd., Da’an Dist., Taipei City",
+        "price": "27000",
+        "property_type": "Condo",
+        "latitude": "25.0328",
+        "longitude": "121.5460",
+        "owner": {
+            "name": "Lu Ming",
+            "contact_info": "0988-888-108"
+        }
+    },
+    {
+        "address": "No.60, Xinsheng S. Rd., Zhongzheng Dist., Taipei City",
+        "price": "35000",
+        "property_type": "House",
+        "latitude": "25.0222",
+        "longitude": "121.5333",
+        "owner": {
+            "name": "Huang Yue",
+            "contact_info": "0988-888-109"
+        }
+    },
+    {
+        "address": "No.48, Jianguo N. Rd., Zhongshan Dist., Taipei City",
+        "price": "18000",
+        "property_type": "Apartment",
+        "latitude": "25.0578",
+        "longitude": "121.5399",
+        "owner": {
+            "name": "Tang Qing",
+            "contact_info": "0988-888-110"
+        }
+    },
+    {
+        "address": "No.71, Heping E. Rd., Da’an Dist., Taipei City",
+        "price": "26000",
+        "property_type": "Condo",
+        "latitude": "25.0265",
+        "longitude": "121.5430",
+        "owner": {
+            "name": "Fan Jian",
+            "contact_info": "0988-888-111"
+        }
+    },
+    {
+        "address": "No.33, Nanjing E. Rd., Songshan Dist., Taipei City",
+        "price": "23000",
+        "property_type": "Apartment",
+        "latitude": "25.0520",
+        "longitude": "121.5595",
+        "owner": {
+            "name": "Yang Zhe",
+            "contact_info": "0988-888-112"
+        }
+    },
+    {
+        "address": "No.21, Keelung Rd., Xinyi Dist., Taipei City",
+        "price": "30000",
+        "property_type": "House",
+        "latitude": "25.0278",
+        "longitude": "121.5645",
+        "owner": {
+            "name": "Wu Rui",
+            "contact_info": "0988-888-113"
+        }
+    },
+    {
+        "address": "No.2, Songren Rd., Xinyi Dist., Taipei City",
+        "price": "34000",
+        "property_type": "Apartment",
+        "latitude": "25.0294",
+        "longitude": "121.5665",
+        "owner": {
+            "name": "Liao Chun",
+            "contact_info": "0988-888-114"
+        }
+    }
+]

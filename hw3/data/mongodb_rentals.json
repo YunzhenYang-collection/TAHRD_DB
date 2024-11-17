@@ -1,0 +1,177 @@
+[
+    {
+        "property_id": "1",
+        "tenant_name": "Chen Lian",
+        "start_date": "2024-01-01",
+        "end_date": "2024-06-30",
+        "rent_amount": "30000"
+    },
+    {
+        "property_id": "2",
+        "tenant_name": "Lin Fang",
+        "start_date": "2024-02-15",
+        "end_date": "2024-08-15",
+        "rent_amount": "25000"
+    },
+    {
+        "property_id": "3",
+        "tenant_name": "Wu Jian",
+        "start_date": "2024-03-10",
+        "end_date": "2024-09-10",
+        "rent_amount": "22000"
+    },
+    {
+        "property_id": "4",
+        "tenant_name": "Zhou Wei",
+        "start_date": "2024-04-05",
+        "end_date": "2024-10-05",
+        "rent_amount": "28000"
+    },
+    {
+        "property_id": "5",
+        "tenant_name": "Huang Yu",
+        "start_date": "2024-05-01",
+        "end_date": "2024-11-01",
+        "rent_amount": "18000"
+    },
+    {
+        "property_id": "6",
+        "tenant_name": "Deng Lan",
+        "start_date": "2024-06-15",
+        "end_date": "2024-12-15",
+        "rent_amount": "32000"
+    },
+    {
+        "property_id": "7",
+        "tenant_name": "Liu Mei",
+        "start_date": "2024-07-01",
+        "end_date": "2024-12-31",
+        "rent_amount": "27000"
+    },
+    {
+        "property_id": "8",
+        "tenant_name": "Xu Yan",
+        "start_date": "2024-08-01",
+        "end_date": "2025-02-01",
+        "rent_amount": "23000"
+    },
+    {
+        "property_id": "9",
+        "tenant_name": "Zheng Hao",
+        "start_date": "2024-09-01",
+        "end_date": "2025-03-01",
+        "rent_amount": "21000"
+    },
+    {
+        "property_id": "10",
+        "tenant_name": "Gao Xin",
+        "start_date": "2024-10-01",
+        "end_date": "2025-04-01",
+        "rent_amount": "20000"
+    },
+    {
+        "property_id": "16",
+        "tenant_name": "Yin Zhi",
+        "start_date": "2024-03-01",
+        "end_date": "2024-09-01",
+        "rent_amount": "21000"
+    },
+    {
+        "property_id": "17",
+        "tenant_name": "Xu Yan",
+        "start_date": "2024-04-10",
+        "end_date": "2024-10-10",
+        "rent_amount": "24000"
+    },
+    {
+        "property_id": "18",
+        "tenant_name": "Chen Li",
+        "start_date": "2024-05-15",
+        "end_date": "2024-11-15",
+        "rent_amount": "28000"
+    },
+    {
+        "property_id": "19",
+        "tenant_name": "Wang Yu",
+        "start_date": "2024-06-01",
+        "end_date": "2024-12-01",
+        "rent_amount": "22000"
+    },
+    {
+        "property_id": "20",
+        "tenant_name": "Zhou Feng",
+        "start_date": "2024-07-20",
+        "end_date": "2025-01-20",
+        "rent_amount": "19000"
+    },
+    {
+        "property_id": "21",
+        "tenant_name": "Li Xin",
+        "start_date": "2024-08-05",
+        "end_date": "2025-02-05",
+        "rent_amount": "33000"
+    },
+    {
+        "property_id": "22",
+        "tenant_name": "Deng Qing",
+        "start_date": "2024-09-15",
+        "end_date": "2025-03-15",
+        "rent_amount": "36000"
+    },
+    {
+        "property_id": "23",
+        "tenant_name": "Fan Qiao",
+        "start_date": "2024-10-01",
+        "end_date": "2025-04-01",
+        "rent_amount": "26000"
+    },
+    {
+        "property_id": "24",
+        "tenant_name": "He Liang",
+        "start_date": "2024-11-01",
+        "end_date": "2025-05-01",
+        "rent_amount": "27000"
+    },
+    {
+        "property_id": "25",
+        "tenant_name": "Gao Rui",
+        "start_date": "2024-12-10",
+        "end_date": "2025-06-10",
+        "rent_amount": "35000"
+    },
+    {
+        "property_id": "26",
+        "tenant_name": "Ma Jing",
+        "start_date": "2024-01-20",
+        "end_date": "2024-07-20",
+        "rent_amount": "18000"
+    },
+    {
+        "property_id": "27",
+        "tenant_name": "Wu Fei",
+        "start_date": "2024-02-15",
+        "end_date": "2024-08-15",
+        "rent_amount": "26000"
+    },
+    {
+        "property_id": "28",
+        "tenant_name": "Huang Ming",
+        "start_date": "2024-03-10",
+        "end_date": "2024-09-10",
+        "rent_amount": "23000"
+    },
+    {
+        "property_id": "29",
+        "tenant_name": "Zhao Lei",
+        "start_date": "2024-04-25",
+        "end_date": "2024-10-25",
+        "rent_amount": "30000"
+    },
+    {
+        "property_id": "30",
+        "tenant_name": "Qian Xin",
+        "start_date": "2024-05-30",
+        "end_date": "2024-11-30",
+        "rent_amount": "34000"
+    }
+]

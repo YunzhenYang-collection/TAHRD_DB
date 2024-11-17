@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Properties</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Rental Properties</h1>
+        <a class="add-button" href="{{ url_for('add_property') }}">Add New Property</a>
+        <table class="properties-table">
+            <thead>
+                <tr>
+                    <th>Address</th>
+                    <th>Price</th>
+                    <th>Type</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    <th>Actions</th>
+                    <th>Rentals</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for property in properties %}
+                <tr>
+                    <td>{{ property.address }}</td>
+                    <td>${{ property.price }}</td>
+                    <td>{{ property.property_type }}</td>
+                    <td>{{ property.latitude }}</td>
+                    <td>{{ property.longitude }}</td>
+                    <td>
+                        <a class="edit-button" href="{{ url_for('edit_property', property_id=property._id) }}">Edit</a>
+                        <form action="{{ url_for('delete_property', property_id=property._id) }}" method="post" style="display:inline;">
+                            <button class="delete-button" type="submit" onclick="return confirm('Are you sure you want to delete this property?');">Delete</button>
+                        </form>
+                    </td>
+                    <td><a class="rentals-button" href="{{ url_for('show_rentals', property_id=property._id) }}">View Rentals</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

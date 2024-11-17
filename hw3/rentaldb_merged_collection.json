@@ -1,0 +1,592 @@
+[
+    {
+        "address": "No.11, Songgao Rd., Xinyi Dist., Taipei City",
+        "price": "30000",
+        "property_type": "Apartment",
+        "latitude": "25.0330",
+        "longitude": "121.5654",
+        "owner": {
+            "name": "Wang Xiaoming",
+            "contact_info": "0988-111-222",
+            "owner_id": "1"
+        },
+        "rentals": [
+            {
+                "property_id": "1",
+                "tenant_name": "Chen Lian",
+                "start_date": "2024-01-01",
+                "end_date": "2024-06-30",
+                "rent_amount": "30000"
+            }
+        ]
+    },
+    {
+        "address": "No.32, Sec. 2, Heping E. Rd., Da’an Dist., Taipei City",
+        "price": "25000",
+        "property_type": "Condo",
+        "latitude": "25.0262",
+        "longitude": "121.5437",
+        "owner": {
+            "name": "Li Meili",
+            "contact_info": "0988-222-333",
+            "owner_id": "2"
+        },
+        "rentals": [
+            {
+                "property_id": "2",
+                "tenant_name": "Lin Fang",
+                "start_date": "2024-02-15",
+                "end_date": "2024-08-15",
+                "rent_amount": "25000"
+            }
+        ]
+    },
+    {
+        "address": "No.91, Tingzhou Rd., Sec. 1, Zhongzheng Dist., Taipei City",
+        "price": "22000",
+        "property_type": "House",
+        "latitude": "25.0234",
+        "longitude": "121.5285",
+        "owner": {
+            "name": "Zhang Datong",
+            "contact_info": "0988-333-444",
+            "owner_id": "3"
+        },
+        "rentals": [
+            {
+                "property_id": "3",
+                "tenant_name": "Wu Jian",
+                "start_date": "2024-03-10",
+                "end_date": "2024-09-10",
+                "rent_amount": "22000"
+            }
+        ]
+    },
+    {
+        "address": "No.42, Sec. 4, Nanjing E. Rd., Songshan Dist., Taipei City",
+        "price": "28000",
+        "property_type": "Apartment",
+        "latitude": "25.0518",
+        "longitude": "121.5532",
+        "owner": {
+            "name": "Chen Anan",
+            "contact_info": "0988-444-555",
+            "owner_id": "4"
+        },
+        "rentals": [
+            {
+                "property_id": "4",
+                "tenant_name": "Zhou Wei",
+                "start_date": "2024-04-05",
+                "end_date": "2024-10-05",
+                "rent_amount": "28000"
+            }
+        ]
+    },
+    {
+        "address": "No.12, Kangding Rd., Wanhua Dist., Taipei City",
+        "price": "18000",
+        "property_type": "Condo",
+        "latitude": "25.0375",
+        "longitude": "121.4990",
+        "owner": {
+            "name": "Lin Qiaoqiao",
+            "contact_info": "0988-555-666",
+            "owner_id": "5"
+        },
+        "rentals": [
+            {
+                "property_id": "5",
+                "tenant_name": "Huang Yu",
+                "start_date": "2024-05-01",
+                "end_date": "2024-11-01",
+                "rent_amount": "18000"
+            }
+        ]
+    },
+    {
+        "address": "No.80, Sec. 5, Xinyi Rd., Xinyi Dist., Taipei City",
+        "price": "32000",
+        "property_type": "Apartment",
+        "latitude": "25.0308",
+        "longitude": "121.5651",
+        "owner": {
+            "name": "Huang Wei",
+            "contact_info": "0988-666-777",
+            "owner_id": "6"
+        },
+        "rentals": [
+            {
+                "property_id": "6",
+                "tenant_name": "Deng Lan",
+                "start_date": "2024-06-15",
+                "end_date": "2024-12-15",
+                "rent_amount": "32000"
+            }
+        ]
+    },
+    {
+        "address": "No.56, Sec. 5, Zhongshan N. Rd., Shilin Dist., Taipei City",
+        "price": "27000",
+        "property_type": "House",
+        "latitude": "25.0912",
+        "longitude": "121.5484",
+        "owner": {
+            "name": "Liu Shiqi",
+            "contact_info": "0988-777-888",
+            "owner_id": "7"
+        },
+        "rentals": [
+            {
+                "property_id": "7",
+                "tenant_name": "Liu Mei",
+                "start_date": "2024-07-01",
+                "end_date": "2024-12-31",
+                "rent_amount": "27000"
+            }
+        ]
+    },
+    {
+        "address": "No.70, Sec. 2, Shipai Rd., Beitou Dist., Taipei City",
+        "price": "23000",
+        "property_type": "Apartment",
+        "latitude": "25.1142",
+        "longitude": "121.5145",
+        "owner": {
+            "name": "Zhou Fangfang",
+            "contact_info": "0988-888-999",
+            "owner_id": "8"
+        },
+        "rentals": [
+            {
+                "property_id": "8",
+                "tenant_name": "Xu Yan",
+                "start_date": "2024-08-01",
+                "end_date": "2025-02-01",
+                "rent_amount": "23000"
+            }
+        ]
+    },
+    {
+        "address": "No.33, Sec. 3, Yanping N. Rd., Datong Dist., Taipei City",
+        "price": "21000",
+        "property_type": "Condo",
+        "latitude": "25.0687",
+        "longitude": "121.5148",
+        "owner": {
+            "name": "Wu Haohao",
+            "contact_info": "0988-999-000",
+            "owner_id": "9"
+        },
+        "rentals": [
+            {
+                "property_id": "9",
+                "tenant_name": "Zheng Hao",
+                "start_date": "2024-09-01",
+                "end_date": "2025-03-01",
+                "rent_amount": "21000"
+            }
+        ]
+    },
+    {
+        "address": "No.71, Sec. 6, Roosevelt Rd., Wenshan Dist., Taipei City",
+        "price": "20000",
+        "property_type": "House",
+        "latitude": "24.9986",
+        "longitude": "121.5393",
+        "owner": {
+            "name": "Xu Xiaoxiao",
+            "contact_info": "0988-000-111",
+            "owner_id": "10"
+        },
+        "rentals": [
+            {
+                "property_id": "10",
+                "tenant_name": "Gao Xin",
+                "start_date": "2024-10-01",
+                "end_date": "2025-04-01",
+                "rent_amount": "20000"
+            }
+        ]
+    },
+    {
+        "address": "No.45, Sec. 7, Zhongxiao E. Rd., Nangang Dist., Taipei City",
+        "price": "26000",
+        "property_type": "Apartment",
+        "latitude": "25.0554",
+        "longitude": "121.6054",
+        "owner": {
+            "name": "Gao Tianya",
+            "contact_info": "0988-111-333",
+            "owner_id": "11"
+        },
+        "rentals": []
+    },
+    {
+        "address": "No.21, Sec. 6, Minquan E. Rd., Neihu Dist., Taipei City",
+        "price": "25000",
+        "property_type": "Condo",
+        "latitude": "25.0795",
+        "longitude": "121.5821",
+        "owner": {
+            "name": "Yang Keke",
+            "contact_info": "0988-222-444",
+            "owner_id": "12"
+        },
+        "rentals": []
+    },
+    {
+        "address": "No.18, Linsen N. Rd., Zhongshan Dist., Taipei City",
+        "price": "28000",
+        "property_type": "Apartment",
+        "latitude": "25.0533",
+        "longitude": "121.5228",
+        "owner": {
+            "name": "Zheng Jie",
+            "contact_info": "0988-333-555",
+            "owner_id": "13"
+        },
+        "rentals": []
+    },
+    {
+        "address": "No.2, Songren Rd., Xinyi Dist., Taipei City",
+        "price": "32000",
+        "property_type": "Condo",
+        "latitude": "25.0324",
+        "longitude": "121.5672",
+        "owner": {
+            "name": "Xie Zhizhi",
+            "contact_info": "0988-444-666",
+            "owner_id": "14"
+        },
+        "rentals": []
+    },
+    {
+        "address": "No.19, Sec. 4, Renai Rd., Da’an Dist., Taipei City",
+        "price": "29000",
+        "property_type": "House",
+        "latitude": "25.0333",
+        "longitude": "121.5436",
+        "owner": {
+            "name": "Deng Huanhuan",
+            "contact_info": "0988-555-777",
+            "owner_id": "15"
+        },
+        "rentals": []
+    },
+    {
+        "address": "No.17, Fuxing S. Rd., Da’an Dist., Taipei City",
+        "price": "21000",
+        "property_type": "Apartment",
+        "latitude": "25.0330",
+        "longitude": "121.5640",
+        "owner": {
+            "name": "Li Wei",
+            "contact_info": "0988-888-100",
+            "owner_id": "16"
+        },
+        "rentals": [
+            {
+                "property_id": "16",
+                "tenant_name": "Yin Zhi",
+                "start_date": "2024-03-01",
+                "end_date": "2024-09-01",
+                "rent_amount": "21000"
+            }
+        ]
+    },
+    {
+        "address": "No.88, Civic Blvd., Zhongshan Dist., Taipei City",
+        "price": "24000",
+        "property_type": "Condo",
+        "latitude": "25.0422",
+        "longitude": "121.5320",
+        "owner": {
+            "name": "Chen Xinyi",
+            "contact_info": "0988-888-101",
+            "owner_id": "17"
+        },
+        "rentals": [
+            {
+                "property_id": "17",
+                "tenant_name": "Xu Yan",
+                "start_date": "2024-04-10",
+                "end_date": "2024-10-10",
+                "rent_amount": "24000"
+            }
+        ]
+    },
+    {
+        "address": "No.5, Changchun Rd., Zhongshan Dist., Taipei City",
+        "price": "28000",
+        "property_type": "House",
+        "latitude": "25.0495",
+        "longitude": "121.5450",
+        "owner": {
+            "name": "Zhang Min",
+            "contact_info": "0988-888-102",
+            "owner_id": "18"
+        },
+        "rentals": [
+            {
+                "property_id": "18",
+                "tenant_name": "Chen Li",
+                "start_date": "2024-05-15",
+                "end_date": "2024-11-15",
+                "rent_amount": "28000"
+            }
+        ]
+    },
+    {
+        "address": "No.76, Bade Rd., Songshan Dist., Taipei City",
+        "price": "22000",
+        "property_type": "Apartment",
+        "latitude": "25.0519",
+        "longitude": "121.5575",
+        "owner": {
+            "name": "Lin Zhihao",
+            "contact_info": "0988-888-103",
+            "owner_id": "19"
+        },
+        "rentals": [
+            {
+                "property_id": "19",
+                "tenant_name": "Wang Yu",
+                "start_date": "2024-06-01",
+                "end_date": "2024-12-01",
+                "rent_amount": "22000"
+            }
+        ]
+    },
+    {
+        "address": "No.23, Chengde Rd., Datong Dist., Taipei City",
+        "price": "19000",
+        "property_type": "Condo",
+        "latitude": "25.0633",
+        "longitude": "121.5153",
+        "owner": {
+            "name": "Xu Hua",
+            "contact_info": "0988-888-104",
+            "owner_id": "20"
+        },
+        "rentals": [
+            {
+                "property_id": "20",
+                "tenant_name": "Zhou Feng",
+                "start_date": "2024-07-20",
+                "end_date": "2025-01-20",
+                "rent_amount": "19000"
+            }
+        ]
+    },
+    {
+        "address": "No.44, Zhongshan N. Rd., Shilin Dist., Taipei City",
+        "price": "33000",
+        "property_type": "Apartment",
+        "latitude": "25.0945",
+        "longitude": "121.5477",
+        "owner": {
+            "name": "Gao Xiong",
+            "contact_info": "0988-888-105",
+            "owner_id": "21"
+        },
+        "rentals": [
+            {
+                "property_id": "21",
+                "tenant_name": "Li Xin",
+                "start_date": "2024-08-05",
+                "end_date": "2025-02-05",
+                "rent_amount": "33000"
+            }
+        ]
+    },
+    {
+        "address": "No.50, Xinsheng N. Rd., Zhongzheng Dist., Taipei City",
+        "price": "36000",
+        "property_type": "House",
+        "latitude": "25.0299",
+        "longitude": "121.5200",
+        "owner": {
+            "name": "Deng Yun",
+            "contact_info": "0988-888-106",
+            "owner_id": "22"
+        },
+        "rentals": [
+            {
+                "property_id": "22",
+                "tenant_name": "Deng Qing",
+                "start_date": "2024-09-15",
+                "end_date": "2025-03-15",
+                "rent_amount": "36000"
+            }
+        ]
+    },
+    {
+        "address": "No.18, Renai Rd., Da’an Dist., Taipei City",
+        "price": "26000",
+        "property_type": "Apartment",
+        "latitude": "25.0323",
+        "longitude": "121.5438",
+        "owner": {
+            "name": "Wang Ping",
+            "contact_info": "0988-888-107",
+            "owner_id": "23"
+        },
+        "rentals": [
+            {
+                "property_id": "23",
+                "tenant_name": "Fan Qiao",
+                "start_date": "2024-10-01",
+                "end_date": "2025-04-01",
+                "rent_amount": "26000"
+            }
+        ]
+    },
+    {
+        "address": "No.95, Dunhua S. Rd., Da’an Dist., Taipei City",
+        "price": "27000",
+        "property_type": "Condo",
+        "latitude": "25.0328",
+        "longitude": "121.5460",
+        "owner": {
+            "name": "Lu Ming",
+            "contact_info": "0988-888-108",
+            "owner_id": "24"
+        },
+        "rentals": [
+            {
+                "property_id": "24",
+                "tenant_name": "He Liang",
+                "start_date": "2024-11-01",
+                "end_date": "2025-05-01",
+                "rent_amount": "27000"
+            }
+        ]
+    },
+    {
+        "address": "No.60, Xinsheng S. Rd., Zhongzheng Dist., Taipei City",
+        "price": "35000",
+        "property_type": "House",
+        "latitude": "25.0222",
+        "longitude": "121.5333",
+        "owner": {
+            "name": "Huang Yue",
+            "contact_info": "0988-888-109",
+            "owner_id": "25"
+        },
+        "rentals": [
+            {
+                "property_id": "25",
+                "tenant_name": "Gao Rui",
+                "start_date": "2024-12-10",
+                "end_date": "2025-06-10",
+                "rent_amount": "35000"
+            }
+        ]
+    },
+    {
+        "address": "No.48, Jianguo N. Rd., Zhongshan Dist., Taipei City",
+        "price": "18000",
+        "property_type": "Apartment",
+        "latitude": "25.0578",
+        "longitude": "121.5399",
+        "owner": {
+            "name": "Tang Qing",
+            "contact_info": "0988-888-110",
+            "owner_id": "26"
+        },
+        "rentals": [
+            {
+                "property_id": "26",
+                "tenant_name": "Ma Jing",
+                "start_date": "2024-01-20",
+                "end_date": "2024-07-20",
+                "rent_amount": "18000"
+            }
+        ]
+    },
+    {
+        "address": "No.71, Heping E. Rd., Da’an Dist., Taipei City",
+        "price": "26000",
+        "property_type": "Condo",
+        "latitude": "25.0265",
+        "longitude": "121.5430",
+        "owner": {
+            "name": "Fan Jian",
+            "contact_info": "0988-888-111",
+            "owner_id": "27"
+        },
+        "rentals": [
+            {
+                "property_id": "27",
+                "tenant_name": "Wu Fei",
+                "start_date": "2024-02-15",
+                "end_date": "2024-08-15",
+                "rent_amount": "26000"
+            }
+        ]
+    },
+    {
+        "address": "No.33, Nanjing E. Rd., Songshan Dist., Taipei City",
+        "price": "23000",
+        "property_type": "Apartment",
+        "latitude": "25.0520",
+        "longitude": "121.5595",
+        "owner": {
+            "name": "Yang Zhe",
+            "contact_info": "0988-888-112",
+            "owner_id": "28"
+        },
+        "rentals": [
+            {
+                "property_id": "28",
+                "tenant_name": "Huang Ming",
+                "start_date": "2024-03-10",
+                "end_date": "2024-09-10",
+                "rent_amount": "23000"
+            }
+        ]
+    },
+    {
+        "address": "No.21, Keelung Rd., Xinyi Dist., Taipei City",
+        "price": "30000",
+        "property_type": "House",
+        "latitude": "25.0278",
+        "longitude": "121.5645",
+        "owner": {
+            "name": "Wu Rui",
+            "contact_info": "0988-888-113",
+            "owner_id": "29"
+        },
+        "rentals": [
+            {
+                "property_id": "29",
+                "tenant_name": "Zhao Lei",
+                "start_date": "2024-04-25",
+                "end_date": "2024-10-25",
+                "rent_amount": "30000"
+            }
+        ]
+    },
+    {
+        "address": "No.2, Songren Rd., Xinyi Dist., Taipei City",
+        "price": "34000",
+        "property_type": "Apartment",
+        "latitude": "25.0294",
+        "longitude": "121.5665",
+        "owner": {
+            "name": "Liao Chun",
+            "contact_info": "0988-888-114",
+            "owner_id": "30"
+        },
+        "rentals": [
+            {
+                "property_id": "30",
+                "tenant_name": "Qian Xin",
+                "start_date": "2024-05-30",
+                "end_date": "2024-11-30",
+                "rent_amount": "34000"
+            }
+        ]
+    }
+]
