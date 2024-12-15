@@ -12,3 +12,5 @@ Database class weekly task  for TAHRD in Fall of 2024
 ## HW3
   - code : [hw3](https://github.com/41171119H/TAHRD_DB/tree/main/hw3)
   - video : [link](https://drive.google.com/file/d/1Z_1TU1ALjM4g8GoLtZwr9AnsnINrfNfH/view?usp=sharing)
+## HW4
+  - [link](https://drive.google.com/file/d/1osSzakbK-F8ropP8OuaoTb7a0LdtCegd/view?usp=drive_link)
